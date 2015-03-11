@@ -1,0 +1,8 @@
+## Title: JMGuildBuyHistoryTracker
+## APIVersion: 100011
+## SavedVariables: JMGuildBuyHistoryTrackerSavedVariables
+## Version: 0.1
+## Author: Jordy Moos
+## Description: Your guild buy history tracker
+
+JMGuildBuyHistoryTracker.lua
