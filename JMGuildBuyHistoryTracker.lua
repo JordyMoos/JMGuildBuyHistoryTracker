@@ -37,7 +37,7 @@ function Collector:getPendingPurchageItemInformation(slotIndex)
 
     local selectedGuildId = GetSelectedTradingHouseGuildId()
     local selectedGuildName
-    for guildIndex = 1, GetNumTradingHouseGuilds() do
+    for guildIndex = 0, GetNumTradingHouseGuilds() do
         local guildId, guildName, guildAlliance = GetTradingHouseGuildDetails(guildIndex)
         if guildId == selectedGuildId then
             selectedGuildName = guildName
@@ -112,6 +112,28 @@ local function Initialize()
         end
     )
 end
+
+
+--[[
+
+    Api
+
+ ]]
+
+---
+-- Making some functions public
+--
+-- @field scan
+--
+JMGuildBuyHistoryTracker = {
+
+    ---
+    -- Get all my buys
+    --
+    getAll = function()
+        return ZO_DeepTableCopy(BuyList)
+    end,
+}
 
 --[[
 
