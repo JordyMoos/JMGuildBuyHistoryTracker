@@ -1,5 +1,5 @@
 ## Title: JMGuildBuyHistoryTracker
-## APIVersion: 100011
+## APIVersion: 1000113
 ## SavedVariables: JMGuildBuyHistoryTrackerSavedVariables
 ## Version: 0.1
 ## Author: Jordy Moos
